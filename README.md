@@ -23,7 +23,8 @@ Run create_tables.py then etl.py
 
 ## Database Schema
 
-<img src = "" width = "900" > 
+
+<img src = "imgs\data_model.PNG" width = "600" align="center" > 
 
 - table name : description
 
