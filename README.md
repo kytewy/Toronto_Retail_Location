@@ -1,17 +1,24 @@
-<img align="right" width="275" src="imgs/Drones.jpg">
-
 # Toronto_Retail_Location Project 
 
-## Introduction
+<img align="right" width="275" src="imgs/Drones.jpg">
 
-A startup called SuperShip, is looking to break into the Toronto market. They help with high-end retailers send their products 
-to their customer faster than the compeition. To have a competitive advatange over competition, they need to analyze where 
-demand is and will be in the fututre in order to select the right location for their shipping hub. The analytics team is particularly interested in understanding where demand is now and where it will be in the future.
+## Background
 
-## Project Description
+With the people are being asked to socaily distance themselves from others, it causes online sales to rise in a big way! Retailers are facing big issues delivering their products. It is causing shortages and delays for companies that are usually reliable at quickly shipping us everything. 
 
-In this project, we will define fact and dimension tables for a star schema for a particular analytic focus, 
-and write an ETL pipeline with databricks that transfers data from files from two local directories into these tables in Postgres using Python and SQL.g
+Walmart has hired an addition 10,000 people to help with online order!
+
+https://www.theglobeandmail.com/business/article-online-grocery-deliveries-struggle-with-surging-demand/
+
+
+## Introducing Supership! 🚀
+
+To combat this problem, we have created a startup called SuperShip. A shipping company that uses drones to drop packages on
+driveways, balconys, and backyards. We are looking to break into the Toronto market. The analytics team is interested in where current demand is and where it will be in the future in order to select the right location for their shipping hub. 
+
+## Project Description 
+
+In this project, we will define fact and dimension tables for a star schema for a particular analytic focus, and write an ETL pipeline with databricks that transfers data from files from two local directories into these tables in Postgres using Python and SQL.
 
 ## Python Scripts Needed
 
@@ -23,8 +30,7 @@ Run create_tables.py then etl.py
 
 ## Database Schema
 
-
-<img src = "imgs\data_model.PNG" width = "600" align="center" > 
+<img align="center" src = "imgs\data_model.PNG" width = "600" > 
 
 - table name : description
 
@@ -34,19 +40,19 @@ Run create_tables.py then etl.py
 
 link: https://open.toronto.ca/dataset/apartment-building-evaluation/
 
-- Format:
-- Helping information: Understand the current demand from apartment buildings
+- Format: Json
+- Useful info: Understand the current demand from apartment buildings
 
 ### Devlopment Application
 
 link: https://open.toronto.ca/dataset/development-applications/
 
-- Format:
-- Helping information: Where future demand will be. 
+- Format: csv
+- Useful info: Where future demand will be. 
 
 ### Census Stats
 
 link: https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/ward-profiles/
 
 - Format: PDF
-- Helping information: The statistics about each ward and gives us customer data on income, demograpghics and etc...
+- Useful info: The statistics about each ward and gives us customer data on income, demograpghics and etc...
