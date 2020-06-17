@@ -20,6 +20,17 @@ driveways, balconys, and backyards. We are looking to break into the Toronto mar
 
 In this project, we will define fact and dimension tables for a star schema for a particular analytic focus, and write an ETL pipeline with databricks that transfers data from files from two local directories into these tables in Postgres using Python and SQL.
 
+## ETL Process
+
+<img align="center" src = "imgs\etl_arch.PNG" width = "600" > 
+
+This ETL follows the follow steps.
+
+1. Airflow submits pyspark scripts to Spark cluster via Livy. 
+2. Spark transforms data and write temp parquet files in Blob Storage.
+3. Airflow requests `COPY` commands to copy temp parquet files to Azure SQL Datawarehouse.
+
+
 ## Python Scripts Needed
 
 Run create_tables.py then etl.py
